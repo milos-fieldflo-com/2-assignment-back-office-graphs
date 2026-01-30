@@ -1,0 +1,151 @@
+{
+  "tickets": [
+    {
+      "key": "CSE-1",
+      "summary": "Login failure on production",
+      "description": "Cannot login after update",
+      "status": "Open",
+      "priority": "P0",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [
+        "backend"
+      ],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-2",
+      "summary": "Minor dashboard UI glitch",
+      "description": "Misaligned buttons",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [
+        "frontend"
+      ],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-3",
+      "summary": "Critical auth service outage",
+      "description": "There is a critical outage in the auth service that needs immediate attention.",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-4",
+      "summary": "API crash on checkout",
+      "description": "A new issue has been reported where the API crashes during checkout. No existing tickets or discussions found related to this issue.",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-5",
+      "summary": "Intermittent failure of payment service",
+      "description": "The payment service has been reported to fail intermittently. This issue needs to be investigated and resolved.",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-6",
+      "summary": "Search results page returning 500 errors",
+      "description": "Users are experiencing 500 errors when trying to access the search results page. This issue needs to be investigated and resolved.",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-7",
+      "summary": "Memory leak in background worker",
+      "description": "A memory leak has been detected in the background worker. This needs to be investigated and resolved.",
+      "status": "Open",
+      "priority": "P2",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-8",
+      "summary": "Complete production outage affecting all users",
+      "description": "There is a complete production outage affecting all users. This issue needs immediate attention.",
+      "status": "Open",
+      "priority": "P0",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-9",
+      "summary": "Server timeout errors in production",
+      "description": "Multiple reports of server timeout errors in production have been received. This issue needs to be investigated and resolved urgently.",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-10",
+      "summary": "Application crashes when user clicks submit button",
+      "description": "The application crashes when the user clicks the submit button. This issue needs to be investigated and resolved.",
+      "status": "Open",
+      "priority": "P1",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    },
+    {
+      "key": "CSE-11",
+      "summary": "User can't change profile image",
+      "description": "A user reported that they are unable to change their profile image. This issue needs to be investigated and resolved.",
+      "status": "Open",
+      "priority": "P2",
+      "type": "Bug",
+      "assignee": null,
+      "labels": [],
+      "component": null,
+      "team": null,
+      "client": null
+    }
+  ]
+}

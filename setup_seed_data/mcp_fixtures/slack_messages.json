@@ -1,0 +1,1 @@
+{"channels": ["#bugs"], "messages": [{"channel": "#bugs", "thread": [{"user": "alice", "text": "Login failure reported by client X", "ts": "2026-01-25T12:00:00"}]}, {"channel": "#bugs", "thread": [{"user": "bob", "text": "Minor dashboard UI glitch", "ts": "2026-01-25T12:05:00"}]}]}

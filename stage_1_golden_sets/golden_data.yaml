@@ -1,0 +1,72 @@
+version: "1.0"
+description: "Bug Triage Golden Set"
+
+test_cases:
+
+  - id: "bt-001"
+    query: "Critical auth service outage"
+    expected_tools: [jira_search, slack_search, github_search, jira_create]
+    must_call: [jira_create]
+    must_contain: ["CSE-", "Created"]
+
+  - id: "bt-002"
+    query: "Minor dashboard UI glitch"
+    expected_tools: [jira_search, slack_search, github_search]
+    must_not_call: [jira_create]
+
+  - id: "bt-003"
+    query: "Random thought about life"
+    expected_tools: []
+
+  - id: "bt-004"
+    query: "Login error reported again by client"
+    must_not_call: [jira_create]
+
+  - id: "bt-005"
+    query: "New API crash on checkout"
+    must_call: [jira_create]
+
+  - id: "bt-006"
+    query: "UI glitch already known"
+    must_not_call: [jira_create]
+
+  - id: "bt-007"
+    query: "Payment service failing intermittently"
+    must_call: [jira_create]
+
+  - id: "bt-008"
+    query: "Explain quantum mechanics"
+    expected_tools: []
+
+  - id: "bt-009"
+    query: "Search results page returning 500 errors"
+    expected_tools: [jira_search, slack_search, github_search, jira_create]
+    must_call: [jira_create]
+
+  - id: "bt-010"
+    query: "Memory leak in background worker"
+    must_call: [jira_create]
+    
+  - id: "bt-011"
+    query: "Complete production outage affecting all users"
+    must_call: [jira_create]
+    must_contain: ["P0", "critical"]
+    
+  - id: "bt-012"
+    query: "Typo in footer text"
+    must_not_call: [jira_create]
+    must_contain: ["low priority", "minor"]
+
+  - id: "bt-013"
+    query: "Server timeout errors happening in production"
+    must_call: [jira_create]
+    must_contain: ["CSE-"]
+
+  - id: "bt-014"
+    query: "Application crashes when user clicks submit button"
+    must_call: [jira_create]
+    expected_tools: [jira_search, slack_search, github_search]
+
+  - id: "bt-015"
+    query: "What is the weather today?"
+    must_not_call: [jira_create]
