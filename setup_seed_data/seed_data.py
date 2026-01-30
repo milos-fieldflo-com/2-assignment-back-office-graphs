@@ -6,7 +6,6 @@ FIXTURES_PATH = Path(__file__).parent / 'mcp_fixtures'
 def seed_data():
     FIXTURES_PATH.mkdir(exist_ok=True)
 
-    # Mock Jira tickets
     jira_mock = {
         "tickets": [
             {"key": "CSE-1", "summary": "Login failure on production", "description": "Cannot login after update", "status": "Open", "priority": "P0", "type": "Bug", "assignee": None, "labels": ["backend"], "component": None, "team": None, "client": None},
@@ -16,7 +15,6 @@ def seed_data():
     with open(FIXTURES_PATH / 'jira_tickets.json', 'w') as f:
         json.dump(jira_mock, f)
 
-    # Mock Slack messages
     slack_mock = {
         "channels": ["#bugs"],
         "messages": [
@@ -27,7 +25,6 @@ def seed_data():
     with open(FIXTURES_PATH / 'slack_messages.json', 'w') as f:
         json.dump(slack_mock, f)
 
-    # Mock GitHub issues
     github_mock = {
         "issues": [
             {"id": 101, "title": "Login failure on production"},
@@ -40,6 +37,5 @@ def seed_data():
     print("Seeded mock Jira tickets, Slack messages, and GitHub issues")
 
 
-# Allow standalone execution
 if __name__ == "__main__":
     seed_data()

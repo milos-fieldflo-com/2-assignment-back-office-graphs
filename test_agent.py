@@ -10,7 +10,6 @@ def pretty(msg):
     if content:
         print(content)
 
-    # Show tool calls explicitly
     if hasattr(msg, "tool_calls") and msg.tool_calls:
         print("TOOL CALLS:")
         for tc in msg.tool_calls:
