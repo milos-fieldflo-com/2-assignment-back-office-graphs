@@ -1,7 +1,5 @@
-from setup_agent.orchestrator import agent
+from setup_agent.orchestrator import DEFAULT_SYSTEM_PROMPT, agent
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-
-SYSTEM_PROMPT = "You are Smart Bug Triage AI."
 
 def pretty(msg):
     name = msg.__class__.__name__
@@ -24,7 +22,7 @@ while True:
 
     state = {
         "messages": [
-            SystemMessage(content=SYSTEM_PROMPT),
+            SystemMessage(content=DEFAULT_SYSTEM_PROMPT),
             HumanMessage(content=q),
         ]
     }
